@@ -15,5 +15,9 @@
     "@tailwindcss/line-clamp": "^0.4.2",
     "astro": "^2.0.8",
     "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4",
+    "prettier-plugin-astro": "^0.8.0"
   }
 }
