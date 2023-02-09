@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import Footer from "../../components/Footer.vue";
 import Header from "../../components/Header";
 import Base from "../../layouts/Base.astro";
 
@@ -18,4 +19,5 @@ const { Content } = await post.render();
 <Base title="AstroBuild.tips">
 	<Header title="AstroBuild.tips" />
 	<Content />
+	<Footer />
 </Base>
