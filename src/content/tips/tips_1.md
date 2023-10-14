@@ -2,7 +2,7 @@
 title: "Integración SEO, RSS, SITEMAP - TIPS #1"
 pubDate: 2023-07-05
 description: " tips para evitar errores a la hora de publicar rss en tu blog"
-image: "https://i.ibb.co/S0JQSBY/rss-feed-error.jpg"
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1QDfitv9gRhg0PylaxW3Vm4jVgaJQIFi5GW1CjofQeEM0W8HD3Z-kFR84A-YM6Z-dCDw&usqp=CAU"
 tags: ["Astro", "SEO", "RSS"]
 layout: "../../layouts/Posts.astro"
 ---
