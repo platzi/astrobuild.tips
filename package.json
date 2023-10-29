@@ -5,31 +5,33 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "astro dev --open",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.16.0",
-    "@astrojs/react": "^2.0.2",
-    "@astrojs/rss": "^2.1.0",
-    "@astrojs/sitemap": "^1.0.1",
-    "@astrojs/svelte": "^2.0.1",
-    "@astrojs/tailwind": "^3.0.1",
-    "@astrojs/vue": "^2.0.1",
-    "@headlessui/react": "^1.7.10",
-    "@heroicons/react": "^2.0.15",
-    "@tailwindcss/line-clamp": "^0.4.2",
-    "astro": "^2.0.8",
+    "@astrojs/mdx": "^1.1.2",
+    "@astrojs/react": "^3.0.3",
+    "@astrojs/rss": "^3.0.0",
+    "@astrojs/sitemap": "^3.0.1",
+    "@astrojs/svelte": "^4.0.3",
+    "@astrojs/tailwind": "^5.0.2",
+    "@astrojs/vue": "^3.0.1",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "astro": "^3.3.0",
+    "npm-check": "^6.0.1",
+    "npm-check-updates": "^16.14.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "svelte": "^3.55.1",
-    "tailwindcss": "^3.2.4",
-    "vue": "^3.2.47"
+    "svelte": "^4.2.1",
+    "tailwindcss": "^3.3.3",
+    "vue": "^3.3.4"
   },
   "devDependencies": {
-    "prettier": "^2.8.4",
-    "prettier-plugin-astro": "^0.8.0"
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0"
   }
 }

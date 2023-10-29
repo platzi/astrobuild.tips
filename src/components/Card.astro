@@ -8,16 +8,42 @@ export interface Props {
 
 const { title, time, tags, slug } = Astro.props;
 const event = new Date(time);
-const date = event.toDateString().slice(0, -4);
+
+
+
+
+const opciones = {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+};
+
+event.toLocaleDateString('es-ES', opciones);
+
+const dia = event.getDate();
+const meses = [
+  'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+  'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+];
+const mes = meses[event.getMonth()];
+const año = event.getFullYear();
+
+const formatoPersonalizado = `${dia} de ${mes} del ${año}`;
+
+const date = formatoPersonalizado;
+
 ---
 
 <article
 	class="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:shadow-sm"
 >
 	<div class="rounded-[10px] bg-white p-4 !pt-10 sm:p-6">
-		<time datetime={date} class="block text-xs text-gray-500">
-			{date}
-		</time>
+		<div
+    class="inline-flex gap-2 self-end rounded bg-green-100 p-1 text-green-600"
+  >
+    <span class="text-xs font-medium"> {date} </span>
+  </div>
+
 
 		<a href={`/posts/${slug}`}>
 			<h3 class="mt-0.5 text-lg font-medium text-gray-900">

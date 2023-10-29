@@ -3,17 +3,39 @@ const {
 	content: { title, pubDate, image, tags },
 } = Astro.props;
 const event = new Date(pubDate);
-const date = event.toDateString().slice(0, -4);
+const opciones = {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+};
+
+event.toLocaleDateString('es-ES', opciones);
+
+const dia = event.getDate();
+const meses = [
+  'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+  'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+];
+const mes = meses[event.getMonth()];
+const año = event.getFullYear();
+
+const formatoPersonalizado = `${dia} de ${mes} del ${año}`;
+
+const date = formatoPersonalizado;
 ---
 
 <section>
 	<div class="mx-auto max-w-screen-xl px-4">
-		<div class="max-w-3xl">
-			<h2 class="text-3xl font-bold sm:text-4xl">
+		<div class="max-w-5xl">
+			<div class="mx-auto max-w-5xl text-center">
+				<h1
+				  class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-2xl font-extrabold text-transparent sm:text-4xl"
+				>
 				{title}
-			</h2>
+
+				</h1>
 			<span
-				class="flex flex-col sm:gap-y-2 md:flex-row md:items-center md:gap-y-0 md:divide-x md:divide-textColor"
+				class="flex flex-col sm:gap-y-2 md:flex-row md:items-center md:gap-y-0 md:divide-x md:divide-textColor mt-4"
 			>
 				<time class="pr-2">{date}</time>
 				{
