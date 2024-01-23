@@ -13,12 +13,12 @@ const date = event.toDateString().slice(0, -4);
 				{title}
 			</h2>
 			<span
-				class="flex flex-col sm:gap-y-2 md:flex-row md:items-center md:gap-y-0 md:divide-x md:divide-textColor"
+				class="flex flex-row sm:gap-y-2 md:flex-row md:items-center md:gap-y-0 md:divide-x md:divide-textColor mt-3"
 			>
 				<time class="pr-2">{date}</time>
 				{
 					tags.map((item) => (
-						<span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+						<span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs mr-1 text-purple-600">
 							{item}
 						</span>
 					))

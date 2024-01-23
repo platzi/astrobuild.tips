@@ -2,7 +2,7 @@
 title: "Utilice componentes reutilizables: Astro"
 pubDate: 2023-01-03
 description: " Hello this is my first recommendation"
-image: "https://arepa.s3.amazonaws.com/og-astro-curso.png"
+image: "https://miro.medium.com/v2/resize:fit:1400/1*oDgPd01FKboRjQA19CZYIw.png"
 tags: ["astro", "javascript"]
 layout: "../../layouts/Posts.astro"
 ---
